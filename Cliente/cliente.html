@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <form action="cliente.php" class="form-grop" method="POST">
+                    <label for=""><strong>Consultar Usuario</strong></label>
+                    <input type="text" name="info" id="" class="form-control" required>
+
+                    <input type="submit" value="Enviar" class="btn btn-dark btn-block" name="submit">
+                </form>
+
+                <br>
+                <form action="eliminar.php" class="form-grop" method="POST">
+                    <label for=""><strong>Desea eliminar algun usuario?</strong></label>
+                    <span>Ingrese nombre del usuario a eliminar</span>
+                    <input type="text" name="delete" id="" class="form-control" required>
+
+                    <input type="submit" value="Enviar" class="btn btn-danger btn-block" name="submit">
+                </form>
+            </div>
+            <div class="col-sm-5">
+                <h2>Ingresar un nuevo usuario</h2>
+                <form action="insertar.php" class="form-group" method="POST">
+
+                    <label for=""><strong>Nombre Completo</strong></label>
+                    <input type="text" name="nombre" class="form-control" required>
+
+                    <label for=""><strong>Ingrese correo</strong></label>
+                    <input type="email" name="email" class="form-control" required>
+
+                    <label for=""><strong>Ingrese Password</strong></label>
+                    <input type="password" name="password" class="form-control" required>
+
+                    <input type="submit" value="Enviar" class="btn btn-success btn-block" name="submit">
+                </form>
+                <hr>
+                <h2>Actualizar un usuario</h2>
+            </div>
+            <div class="col-sm">
+                One of three columns
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
